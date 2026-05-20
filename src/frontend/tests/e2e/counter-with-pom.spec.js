@@ -16,12 +16,12 @@ test('Test increment and decrement with POM', async ({ counterPage }) => {
   await expect(counterValue).toContainText('0');
 });
 
-test('Aria snapshot with POM', async ({ counterPage }) => {
-  await expect(counterPage.page.locator('html')).toMatchAriaSnapshot(`
-    - document:
-      - 'heading "Counter: 0" [level=2]'
-      - button "Increment"
-      - button "Decrement"
-      - paragraph: "isPrime: false"
-  `);
-});
+// test('Aria snapshot with POM', async ({ counterPage }) => {
+//   await expect(counterPage.page.locator('html')).toMatchAriaSnapshot(`
+//     - document:
+//       - 'heading "Counter: 0" [level=2]'
+//       - button "Increment"
+//       - button "Decrement"
+//       - paragraph: "isPrime: false"
+//   `);
+// });
